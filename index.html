@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Networking Concepts</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.min.css">
 
-    <!-- ✅ Google Analytics Corrected Code -->
+    <!-- ✅ Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TBJH13272"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){ dataLayer.push(arguments); }
         gtag('js', new Date());
-
-        // Enable Debug Mode for testing
         gtag('config', 'G-2TBJH13272', { 'debug_mode': true });
-    </script>   
+    </script>
+
+    <!-- ✅ XSS Protection (DOMPurify) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.3/purify.min.js"></script>
 </head>
 <body>
     <header>
@@ -40,6 +41,6 @@
         <p>Created by <strong>Ashir Imran</strong> | Hosted on <a href="https://www.netlify.com/" target="_blank" style="color: lightblue;">Netlify.com</a></p>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="/script.min.js"></script>
 </body>
 </html>

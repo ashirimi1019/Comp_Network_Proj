@@ -1,3 +1,30 @@
+// ✅ Google Analytics Injection
+(function(){
+    var gtagScript = document.createElement("script");
+    gtagScript.async = true;
+    gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-2TBJH13272";
+    document.head.appendChild(gtagScript);
+
+    gtagScript.onload = function(){
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-2TBJH13272', { 'debug_mode': true });
+    };
+})();
+
+// ✅ XSS Protection with DOMPurify
+function sanitizeInput(input) {
+    return DOMPurify.sanitize(input);
+}
+
+// ✅ Lazy Load Images (Performance Optimization)
+document.addEventListener("DOMContentLoaded", function(){
+    let lazyImages = document.querySelectorAll("img[loading='lazy']");
+    lazyImages.forEach(img => img.src = img.dataset.src);
+});
+
+// ✅ Scroll Animation (Your Original Code)
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll("section");
 
