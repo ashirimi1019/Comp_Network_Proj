@@ -30,9 +30,3 @@ document.addEventListener("DOMContentLoaded", function() {
         gtag('config', 'G-2TBJH13272', { 'debug_mode': true });
     };
 })();
-
-// ✅ Lazy Load Images (Performance Optimization)
-document.addEventListener("DOMContentLoaded", function(){
-    let lazyImages = document.querySelectorAll("img[loading='lazy']");
-    lazyImages.forEach(img => img.src = img.dataset.src);
-});
