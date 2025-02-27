@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Networking Aspects</title>
     <link rel="stylesheet" href="/style.css">
+
+    <!-- ✅ Google Analytics Added -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TBJH13272"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        // Enable Debug Mode
+        gtag('config', 'G-2TBJH13272', { 'debug_mode': true });
+    </script>  
 </head>
 <body>
     <header>
@@ -21,7 +32,7 @@
     <main>
         <section>
             <h2>Website Accessibility & Networking</h2>
-            <p>Websites are hosted on servers and accessed using IP addresses or domain names. This website is hosted on **Netlify**, making it accessible online.</p>
+            <p>Websites are hosted on servers and accessed using IP addresses or domain names. This website is hosted on <strong>Netlify</strong>, making it accessible online.</p>
         </section>
         <section>
             <h2>Key Networking Components</h2>
@@ -35,12 +46,14 @@
             <h2>Example of Network Communication</h2>
             <p>When you visit <strong>www.example.com</strong>, the process follows these steps:</p>
             <ol>
-                <li>Your browser sends a request to a **DNS server**.</li>
-                <li>The DNS server translates **www.example.com** into an **IP address**.</li>
-                <li>Your device connects to the server hosting the website using **HTTP/HTTPS**.</li>
+                <li>Your browser sends a request to a <strong>DNS server</strong>.</li>
+                <li>The DNS server translates <strong>www.example.com</strong> into an <strong>IP address</strong>.</li>
+                <li>Your device connects to the server hosting the website using <strong>HTTP/HTTPS</strong>.</li>
                 <li>The website loads in your browser.</li>
             </ol>
         </section>
     </main>
+
+    <script src="/script.js"></script>
 </body>
 </html>
